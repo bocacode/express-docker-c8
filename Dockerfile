@@ -3,7 +3,7 @@ FROM node:16-alpine3.15
 
 # Create a working directory and copy all files (except those in .dockerignore)
 WORKDIR /src/
-COPY . .
+COPY . /src/
 
 # Install our dependencies
 RUN npm install
